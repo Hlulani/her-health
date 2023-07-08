@@ -1,0 +1,75 @@
+body {
+    background-image: url("../images/background.png");
+    color:#fff;
+}
+
+@font-face {
+    font-family: "Sofia Sans";
+    src: 
+        url("../../fonts/SofiaSans-Regular.ttf") format("truetype"),
+        url("../../fonts/SofiaSans-Italic-VariableFont_wght.ttf") format("truetype");
+    font-family: "Sofia Sans Medium";
+    src: 
+        url("../../fonts/SofiaSans-Medium.ttf") format("truetype");
+  }
+
+.container {
+    margin-top: 15%;
+    width: 60%;
+
+    table {
+        display: flex;
+        flex-direction: row;
+        border-radius: 0;
+
+        
+
+        li {
+            list-style-type: none;
+            h2 {
+            font-family: 'Sofia Sans', sans-serif;
+            font-weight: bold;
+            font-size: 24pt;
+            color: #000;
+            margin-bottom: 40px;
+            }
+            img {
+            width: 70%;
+            margin-top: 50px;
+            }
+    
+        }
+    }
+
+   
+
+    .form-group {
+        display: inline-block flex;
+        padding: 3px;
+        position: relative;
+        flex-direction: row;
+
+        label {
+            font-family: 'Sofia Sans Medium';
+            font-size: 10pt;
+            color:#1BA5B7;
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+
+        input {
+            outline: none;
+            border: none;
+            display:block;
+            line-height: 1.2em;
+            font-size: 14pt;
+        }
+    }
+    button {
+        background-color: red;
+        color: #fff;
+    }
+}
