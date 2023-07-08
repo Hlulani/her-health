@@ -1,15 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-questionnaire',
   templateUrl: './questionnaire.component.html',
-  styleUrls: ['./questionnaire.component.scss']
+  styleUrls: ['./questionnaire.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class QuestionnaireComponent {
   age!: number;
   gender!: string;
   location!: string;
+  weight!: string;
+  lifestyle!: string;
+  genetic!: string;
+  height!: string;
+  health!: string;
+
 
   constructor(private router: Router) {}
 

@@ -1,0 +1,100 @@
+.signup-container {
+    background-image: url("../../assets/img/background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    margin-top: 0;
+   
+  
+  }
+  
+  
+  .signup-container form {
+    margin-top: 20px;
+  }
+  
+  .signup-container h1 {
+    margin-bottom: 20px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bolder;
+    line-height: 2.2;
+  }
+  
+  .signup-container input::placeholder {
+    color: #cef0f0;
+  }
+  
+  .form-check-input:checked {
+    background-color: fff;
+    border-color: #fd650d;
+  }
+  
+  
+  .curved-button {
+    border-radius: 25px;
+    padding: 10px 48px;
+    color: #78D9E5;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .signup-container .form-check-label.small {
+    font-size: 13px;
+  }
+  
+  .signup-container .form-control {
+    width: 100%;
+    max-width: 400px; /* Adjust the value as needed */
+  }
+  
+  
+  .facebook-button {
+    background-color: #CEF0F0;
+    color: black;
+  }
+  
+  .google-button {
+    background-color: #CEF0F0;
+    color: black;
+  }
+  
+  .new-button {
+    background-color: #E93A26;
+    color: #fff;
+  }
+  
+  
+  .btn-xl {
+    padding: 10px 98px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  .btn-xl-2 {
+    padding: 10px 109px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  .or-text {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
