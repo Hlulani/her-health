@@ -12,6 +12,7 @@ import { ScoreComponent } from './score/score.component';
 import { SignupComponent } from './signup/signup.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { FormsModule } from '@angular/forms';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     ResultComponent,
     ScoreComponent,
     SignupComponent,
-    QuestionnaireComponent
+    QuestionnaireComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
