@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <h2>Welcome, {{ userProfile.name }}!</h2>
+      <p>Let's start the quiz.</p>
+      <div class="text-center" *ngIf="!quizCompleted">
+        <h3>Question {{ currentQuestion.id }}:</h3>
+        <p>{{ currentQuestion.text }}</p>
+        <ul>
+          <li *ngFor="let option of currentQuestion.options">
+            <button class="btn btn-primary" (click)="selectAnswer(option)">{{ option }}</button>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="quizCompleted">
+        <app-result [score]="score" [currentQuiz]="currentQuiz"></app-result>
+        <button class="btn btn-primary" (click)="startQuiz(1)">Start Next Quiz</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<!-- <div>
+    <h3>Question {{ question.id }}:</h3>
+    <p>{{ question.text }}</p>
+    <ul>
+      <li *ngFor="let option of question.options">
+        <button (click)="selectAnswer(option)">{{ option }}</button>
+      </li>
+    </ul>
+  </div> -->
+
+
+  <div class="container ">
+    <div class="row just ">
+      <div class="col-sm-6">
+        <div class="text-center">
+          <h3>Question {{ question.id }}:</h3>
+          <p>{{ question.text }}</p>
+          <ul>
+            <li *ngFor="let option of question.options">
+              <button class="btn btn-primary" (click)="selectAnswer(option)">{{ option }}</button>
+            </li>
+          </ul>
+
+            <!-- Educational content section -->
+  <div class="educational-content card mt-4">
+    <div class="card-body">
+      <h4 class="card-title">Educational Content:</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum mauris sed velit posuere, nec blandit orci vestibulum. Suspendisse potenti. Aliquam tristique nisl et mi fringilla, a bibendum tellus blandit.</p>
+      <p>Nulla facilisi. Mauris eu lorem ipsum, in ultricies justo. Phasellus iaculis, est non feugiat suscipit, ligula tellus viverra sem, ut volutpat orci metus nec enim.</p>
+      <!-- Add more educational content here -->
+    </div>
+  </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  

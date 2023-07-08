@@ -1,0 +1,54 @@
+<!-- <h2 class="text-center">Quiz Completed!</h2>
+<p class="text-center">Your score: {{ score }} / {{ currentQuiz.length }}</p>
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Quiz Results:</h4>
+      <hr>
+      <div *ngFor="let question of currentQuiz" [ngClass]="{'bg-success text-white': isCorrectAnswer(question)}">
+        <h5>Question:</h5>
+        <p class="mb-1">{{ question.text }}</p>
+        <h5>Answer:</h5>
+        <p class="mb-1">{{ question.answer }}</p>
+        <h5>Correct:</h5>
+        <p class="mb-4">{{ isCorrectAnswer(question) ? 'Yes' : 'No' }}</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<h2 class="text-center">{{ userName }} Quiz Completed!</h2>
+<p class="text-center">Your score: {{ score }} / {{ currentQuiz.length }}</p>
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Quiz Results:</h4>
+      <hr>
+      <div *ngFor="let question of currentQuiz" [ngClass]="{'bg-danger': !isCorrectAnswer(question)}">
+        <h5>Question:</h5>
+        <p class="mb-1">{{ question.text }}</p>
+        <h5>Answer:</h5>
+        <p class="mb-1">{{ question.userAnswer }}</p>
+        <h5>Correct:</h5>
+        <p class="mb-4">
+          <ng-container *ngIf="isCorrectAnswer(question); then correctAnswer else incorrectAnswer"></ng-container>
+        </p>
+      </div>
+      <hr>
+      <h5>Educational Fact:</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum mauris sed velit posuere, nec blandit orci vestibulum. Suspendisse potenti. Aliquam tristique nisl et mi fringilla, a bibendum tellus blandit.</p>
+      <p>Nulla facilisi. Mauris eu lorem ipsum, in ultricies justo. Phasellus iaculis, est non feugiat suscipit, ligula tellus viverra sem, ut volutpat orci metus nec enim.</p>
+    </div>
+  </div>
+</div>
+
+<ng-template #correctAnswer>
+  <span class="text-success">Yes</span>
+</ng-template>
+
+<ng-template #incorrectAnswer>
+  <span class="text-danger">No</span>
+</ng-template>
