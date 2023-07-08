@@ -1,19 +1,18 @@
-<div class="container">
-    <h2>Sign Up</h2>
-    <form (submit)="signup()">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="name" required>
+<div class="signup-container">
+  <h2>Welcome, girl!  </h2>
+  <form (submit)="signup()">
+    <div class="form-group mb-3">
+      <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name" required>
+    </div>
+    <div class="form-group mb-3">
+      <input type="password" class="form-control" placeholder="Password" [(ngModel)]="password" required>
+    </div>
+    <div class="form-group form-check d-flex justify-content-between">
+      <div>
+        <input type="checkbox" class="form-check-input" id="rememberMe">
+        <label class="form-check-label" for="rememberMe" style="font-size:15px;">Remember Me</label>
       </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" [(ngModel)]="email" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" class="form-control" id="password" [(ngModel)]="password" required>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign Up</button>
-    </form>
-  </div>
-  
+      <button type="submit" class="btn btn-teal curved-button">Sign In</button>
+    </div>
+  </form>
+</div>

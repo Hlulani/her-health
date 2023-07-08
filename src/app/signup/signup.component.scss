@@ -1,0 +1,45 @@
+.signup-container {
+  background-image: url("../../assets/img/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: black;
+  // font-family: 'Sofia Sans', sans-serif;
+  // font-weight: bolder;
+  // line-height: 2.2;
+  font-size: 48px;
+}
+
+
+.signup-container form {
+  margin-top: 20px;
+}
+
+.signup-container h1 {
+  margin-bottom: 20px;
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: bolder;
+  line-height: 2.2;
+}
+
+.signup-container input::placeholder {
+  color: #cef0f0;
+}
+
+.form-check-input:checked {
+  background-color: fff;
+  border-color: #fd650d;
+}
+
+
+.curved-button {
+  border-radius: 25px;
+  padding: 10px 48px;
+  color: #78D9E5;
+}
+
