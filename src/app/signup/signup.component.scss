@@ -12,7 +12,9 @@
   // font-family: 'Sofia Sans', sans-serif;
   // font-weight: bolder;
   // line-height: 2.2;
-  font-size: 48px;
+  margin-top: 0;
+ 
+
 }
 
 
@@ -42,4 +44,26 @@
   padding: 10px 48px;
   color: #78D9E5;
 }
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.signup-container .form-check-label.small {
+  font-size: 13px;
+}
+
+.signup-container .form-control {
+  width: 100%;
+  max-width: 400px; /* Adjust the value as needed */
+}
+
+
+
+
+
+
+
+
 
