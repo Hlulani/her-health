@@ -14,7 +14,7 @@ export class WrongComponent implements OnInit {
   }
 
   navigateToNextScreen() {
-    this.router.navigate(['/questionnaire']);
+    this.router.navigate(['/second-quiz']);
   }
   
 
