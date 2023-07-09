@@ -13,6 +13,9 @@ import { SignupComponent } from './signup/signup.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { FormsModule } from '@angular/forms';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { RightComponent } from './right/right.component';
+import { WrongComponent } from './wrong/wrong.component';
+import { WrongQuastionnareComponent } from './wrong-quastionnare/wrong-quastionnare.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { SignInComponent } from './sign-in/sign-in.component';
     ScoreComponent,
     SignupComponent,
     QuestionnaireComponent,
-    SignInComponent
+    SignInComponent,
+    RightComponent,
+    WrongComponent,
+    WrongQuastionnareComponent
   ],
   imports: [
     BrowserModule,
